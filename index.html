@@ -5,30 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="./scripts/main.js"></script>
   
-  <title>Frontend Mentor | IP Address Tracker</title>
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | IP Address Tracker</title>
 </head>
 <body>
+  <div class="page-container">
+    <div class="top-container">
+      <span class="title-text">IP Address Tracker</span>
+      <div class="input-container">
+        <input id="ipInput" class="ip-input-field" type="text" placeholder="Search for any IP address or domain.">
+        <button class="ip-input-button">Submit</button>
+      </div>
+      <div class="info-fields-card">
+        <span class="info-field-row">
+          <span class="info-field-title-text">IP Address</span>
+          <span id="ipAddressValue"class="info-field-value">Sample</span>
+        </span>
+        <span class="info-field-row">
+          <span class="info-field-title-text">Location</span>
+          <span id="locationValue"class="info-field-value">Sample</span>
+        </span>
+        <span class="info-field-row">
+          <span class="info-field-title-text">Timezone</span>
+          <span id="timezoneValue"class="info-field-value">Sample</span>
+        </span>
+        <span class="info-field-row">
+          <span class="info-field-title-text">ISP</span>
+          <span id="ispValue"class="info-field-value">Sample</span>
+        </span>
+      </div>
+    </div>
+    <div class="bottom-container">
 
-  IP Address Tracker
-
-  Search for any IP address or domain
-
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    </div>
   </div>
 </body>
 </html>

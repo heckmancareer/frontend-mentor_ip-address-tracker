@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-size: 14px;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../images/pattern-bg-desktop.png) no-repeat;
+    padding: 14px;
+}
+
+.title-text {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.info-fields-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    border-radius: 8%;
+}
+
+.input-container {
+    display: flex;
+}
