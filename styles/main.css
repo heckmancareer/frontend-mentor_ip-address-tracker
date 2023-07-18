@@ -1,6 +1,13 @@
+:root {
+    --dark-gray: hsl(0, 0%, 59%);
+    --very-dark-grey: hsl(0, 0%, 17%);
+}
+
 body {
     margin: 0;
     font-size: 14px;
+    min-width: 375px;
+    background-color: red;
 }
 
 .page-container {
@@ -14,7 +21,11 @@ body {
     flex-direction: column;
     align-items: center;
     background: url(../images/pattern-bg-desktop.png) no-repeat;
-    padding: 14px;
+    background-size: cover;
+    padding: 18px;
+    padding-bottom: 140px;
+    position: relative;
+    overflow: visible;
 }
 
 .title-text {
@@ -22,17 +33,84 @@ body {
     font-weight: 500;
     color: white;
     font-size: 1.6rem;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
 .info-fields-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: calc(100% - 36px);
+    max-width: 1440px;
     background-color: white;
     border-radius: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    position: absolute;
+    top: 60%;
+    z-index: 2;
+}
+
+.info-field-row {
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.info-field-title-text {
+    color: var(--dark-gray);
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+}
+
+.info-field-value {
+    text-align: center;
+    color: var(--very-dark-grey);
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 5px;
 }
 
 .input-container {
     display: flex;
+    width: 100%;
+}
+
+.ip-input-field {
+    all: unset;
+    background-color: white;
+    padding: 15px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: var(--very-dark-grey);
+    font-size: 18px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 100%;
+}
+
+.ip-input-button {
+    all: unset;
+    background-color: black;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-weight: 700;
+    font-size: 18px;
+    min-width: 50px;
+    text-align: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+}
+
+.bottom-container {
+    flex-grow: 1;
+    z-index: 1;
 }
