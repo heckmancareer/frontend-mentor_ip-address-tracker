@@ -24,25 +24,25 @@
     <div class="top-container">
       <span class="title-text">IP Address Tracker</span>
       <div class="input-container">
-        <input id="ipInput" class="ip-input-field" type="text" placeholder="Search for any IP address or domain.">
-        <button class="ip-input-button">></button>
+        <input id="ip-input" class="ip-input-field" type="text" placeholder="Search for any IP address or domain.">
+        <button id="fire-search-button" onclick="fetchIPAddress" class="ip-input-button">></button>
       </div>
       <div class="info-fields-card">
         <span class="info-field-row">
           <span class="info-field-title-text">IP Address</span>
-          <span id="ipAddressValue"class="info-field-value">Sample</span>
+          <span id="ip-address-value" class="info-field-value">N/A</span>
         </span>
         <span class="info-field-row">
           <span class="info-field-title-text">Location</span>
-          <span id="locationValue"class="info-field-value">Sample</span>
+          <span id="location-value" class="info-field-value">N/A</span>
         </span>
         <span class="info-field-row">
           <span class="info-field-title-text">Timezone</span>
-          <span id="timezoneValue"class="info-field-value">Sample</span>
+          <span id="timezone-value" class="info-field-value">N/A</span>
         </span>
         <span class="info-field-row">
           <span class="info-field-title-text">ISP</span>
-          <span id="ispValue"class="info-field-value">Sample</span>
+          <span id="isp-value" class="info-field-value">N/A</span>
         </span>
       </div>
     </div>
@@ -54,5 +54,5 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
-<script src="./scripts/main.js"></script>
+<script type="module" src="./scripts/main.js"></script>
 </html>

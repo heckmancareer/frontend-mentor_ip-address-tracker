@@ -44,7 +44,7 @@ body {
     width: calc(100% - 36px);
     max-width: 1440px;
     background-color: white;
-    border-radius: 8%;
+    border-radius: 4%;
     padding-top: 10px;
     padding-bottom: 10px;
 
