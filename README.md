@@ -9,4 +9,4 @@ Given that geo.ipify is a paid service, the demo version of this repo on Github 
 
 If you would like to try a working version, clone this repo locally, sign up for a free account with geo.ipify, then place your API key [here](https://github.com/heckmancareer/frontend-mentor_ip-address-tracker/blob/main/scripts/main.js#L2).
 
-Live Demo via Github Pages: 
+Live Demo via Github Pages: https://heckmancareer.github.io/frontend-mentor_ip-address-tracker/
